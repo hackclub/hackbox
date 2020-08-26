@@ -1,0 +1,31 @@
+{
+  "name": "storybook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@emotion/styled": "^10.0.27",
+    "@hackclub/theme": "^0.3.0",
+    "emotion": "^10.0.27",
+    "next": "9.5.2",
+    "next-images": "^1.4.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "theme-ui": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-actions": "^6.0.18",
+    "@storybook/addon-essentials": "^6.0.18",
+    "@storybook/addon-links": "^6.0.18",
+    "@storybook/react": "^6.0.18",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
+  }
+}
