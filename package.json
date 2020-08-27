@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emotion/styled": "^10.0.27",
+    "@hackclub/icons": "^0.0.3",
     "@hackclub/theme": "^0.3.0",
     "emotion": "^10.0.27",
     "next": "9.5.2",

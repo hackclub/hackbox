@@ -2,8 +2,9 @@
 import { jsx, Flex, Grid, Box } from 'theme-ui'
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from '@emotion/styled'
 import flag from './assets/Header/hackclubflag.png'
-
+import Icon from '@hackclub/icons'
 /***
  * Header of the website
  */
@@ -11,6 +12,7 @@ import flag from './assets/Header/hackclubflag.png'
 export default ({ bg }) => {
   return (
     <Box
+      as='header'
       columns={[2, 2, 3, 3]}
       sx={{
         width: '100%',
@@ -28,34 +30,54 @@ export default ({ bg }) => {
         <img
           src={flag}
           sx={{
-            width: '120px',
+            width: ['110px', '120px'],
             position: 'absolute',
-            ml: [2, 4, 5],
+            ml: [2, 3, 2, 5],
           }}
         />
         <Flex
+          as='nav'
           sx={{
             flex: 1,
             alignItems: 'center',
-            justifyContent: 'center',
-            h3: {
-              mx: 3,
+            flexDirection: ['row-reverse', 'row-reverse', 'row'],
+            justifyContent: ['initial', 'initial', 'center'],
+            a: {
               fontSize: '20px',
               display: ['none', 'none', 'initial'],
-              ':hover': {
-                cursor: 'pointer',
-              },
+              mx: 3,
               color: bg ? 'black' : 'white',
+              cursor: 'pointer',
               fontWeight: 'normal',
             },
           }}>
-          <h3>Home</h3>
-          <h3>Team</h3>
-          <h3>Installation</h3>
-          <h3>Github</h3>
-          <h3>FAQ</h3>
+          <Nav data={data} />
+          <Icon
+            sx={{ mr: [3], display: ['initial', 'initial', 'none'] }}
+            glyph='menu'
+            size='48px'
+          />{' '}
         </Flex>
       </Flex>
     </Box>
   )
 }
+
+const Customh3 = styled.h3``
+const Nav = ({ data }) => (
+  <>
+    {data.map((ele) => (
+      <Customh3 as='a' href={ele.url ? ele.url : '#'}>
+        {ele.text}
+      </Customh3>
+    ))}
+  </>
+)
+
+const data = [
+  { text: 'Home', url: '#' },
+  { text: 'Team', url: '#' },
+  { text: 'Installation', url: '#' },
+  { text: 'Github', url: '#' },
+  { text: 'FAQ', url: '#' },
+]
