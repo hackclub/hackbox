@@ -5,10 +5,10 @@ export default () => (
     as='section'
     sx={{
       width: '100%',
-      position: 'absolute',
+      // position: 'relative',
       top: '70px',
       color: 'white',
-      pt: 4,
+      pt: 'calc(70px + 32px)', //4
       pb: [3, 4],
       backgroundImage:
         'url(landingpge/trianglepattern.svg),linear-gradient(120.29deg, rgba(235, 35, 63, 0.86), rgba(183, 3, 28, 0.86)),url(landingpage/patternalt.svg)',
@@ -63,7 +63,7 @@ export default () => (
           mx: [1],
         }}>
         A project to provide internet resources to the most remote parts of the
-        world <b>Use React Reveal Below</b>
+        world
         <span sx={{ display: ['none', 'initial'] }}>
           {' '}
           , because we think internet is everyone’s right!
