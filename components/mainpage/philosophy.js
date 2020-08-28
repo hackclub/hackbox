@@ -27,45 +27,47 @@ export default () => (
     </Fade>
     <Grid columns={[1, 1, 2]} gap={[4]} sx={{ pt: [3, 4] }}>
       <Fade bottom clear>
-        <Wrapper
+        <Flex
           sx={{
+            bg: 'red',
+            height: '350px',
+            borderRadius: ['8px', '10px'],
+            flexDirection: 'column',
+            color: 'white',
             ':after': {
-              bottom: ['-3rem', '-2rem', '-4rem'],
-              right: ['-1rem'],
-              width: ['6rem', '8rem'],
-              height: ['8rem', '10rem'],
+              content: '',
+              display: 'inline-block',
+              position: 'absolute',
+              backgroundSize: '100%',
+              backgroundRepeat: 'no-repeat',
+              bottom: '-4rem',
+              right: '-1rem',
+              backgroundImage: 'url(landingpage/buddha.svg)',
+              width: '8rem',
+              height: '10rem',
             },
           }}>
-          <Flex
-            sx={{
-              bg: 'red',
-              height: '350px',
-              borderRadius: ['8px', '10px'],
-              flexDirection: 'column',
-              color: 'white',
-            }}>
-            <Box sx={{ mx: [4] }}>
-              <h2
-                sx={{
-                  fontSize: [5],
-                  textAlign: 'center',
-                  pb: [2, 3],
-                  backgroundImage: 'url(landingpage/underline.svg)',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'bottom center',
-                  backgroundSize: '300px',
-                  mb: [3, 4],
-                }}>
-                EQUALITY
-              </h2>
-              <Text sx={{ fontSize: [2, 3] }}>
-                We are blessed with internet and are regularly upskilling
-                ourselves but their are still millions who lag access to this
-                wonderful resources. We are trying to bridge this gap.
-              </Text>
-            </Box>
-          </Flex>
-        </Wrapper>
+          <Box sx={{ mx: [4] }}>
+            <h2
+              sx={{
+                fontSize: [5],
+                textAlign: 'center',
+                pb: [2, 3],
+                backgroundImage: 'url(landingpage/underline.svg)',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'bottom center',
+                backgroundSize: '300px',
+                mb: [3, 4],
+              }}>
+              EQUALITY
+            </h2>
+            <Text sx={{ fontSize: [2, 3] }}>
+              We are blessed with internet and are regularly upskilling
+              ourselves but their are still millions who lag access to this
+              wonderful resources. We are trying to bridge this gap.
+            </Text>
+          </Box>
+        </Flex>
       </Fade>
       <Fade bottom clear>
         <Flex
@@ -84,7 +86,12 @@ export default () => (
           <Box
             sx={{
               ml: [3, 4],
-              transform: ['translate(0,40px)', 'translate(0,60px)'],
+              transform: [
+                'translate(0,40px)',
+                'translate(0,40px)',
+                'translate(0,40px)',
+                'translate(0,60px)',
+              ],
               textShadow: '1px 1px 5px black',
             }}>
             <h2
@@ -96,7 +103,7 @@ export default () => (
               }}>
               #EDUCATION
             </h2>
-            <Text sx={{ fontSize: [2, 3], fontWeight: 'regular' }}>
+            <Text sx={{ fontSize: [2, 2, 2, 3], fontWeight: 'regular' }}>
               More than 40% of the world's population has no or very limited
               access to the internet and are deprived from the resources
               available on internet which we take for granted.
@@ -107,18 +114,3 @@ export default () => (
     </Grid>
   </Box>
 )
-
-const Wrapper = styled.div`
-  &:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    bottom: -4rem;
-    right: -1rem;
-    background-image: url(landingpage/buddha.svg);
-    width: 8rem;
-    height: 10rem;
-  }
-`
