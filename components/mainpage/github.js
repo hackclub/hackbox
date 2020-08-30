@@ -18,10 +18,9 @@ export default () => (
       backgroundPosition: [
         'left -400px top -20px',
         'left -400px top -20px',
-        'right -250px top 80px , left -400px top -20px',
+        'right -250px top 80px , left -420px top -120px',
       ],
       backgroundSize: ['default', 'default', 'default,800px', 'default,800px'],
-      height: '900px',
     }}>
     <Box as='section' sx={{ variant: 'sectionbox' }}>
       <h1 sx={{ color: 'facebook' }}>Where is the code?</h1>
