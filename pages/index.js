@@ -3,6 +3,8 @@ import Header from '../stories/Header'
 import Hero from '../components/mainpage/heroimage'
 import Intro from '../components/mainpage/intro'
 import Philiosophy from '../components/mainpage/philosophy'
+import Working from '../components/mainpage/working'
+import Github from '../components/mainpage/github'
 
 export default () => (
   <div>
@@ -13,5 +15,7 @@ export default () => (
     <Hero />
     <Intro />
     <Philiosophy />
+    <Working />
+    <Github />
   </div>
 )
