@@ -1,5 +1,5 @@
 import { BaseStyles, Box, Button, Container, Grid, Heading } from 'theme-ui'
-import Meta from '@hackclub/meta'
+import Meta from '../meta/index'
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
@@ -10,7 +10,7 @@ export default () => (
     <Meta
       as={Head}
       title='FAQs'
-      description='Hack Club Alexa Challenge FAQ i.e Frequently Asked Questions'
+      description='Hack Box is an intiative to provide internet resources to the most remote parts of the world'
       //  image="https://workshop-cards.hackclub.com/Press.png?fontSize=350px&brand=HQ"
     />
     <Header bg='white' />
@@ -28,7 +28,7 @@ export default () => (
           FAQ ( Frequently Asked Questions )
         </Heading>
         <Heading as='h2' variant='subtitle' sx={{ mt: 3, color: 'text' }}>
-          Some of the most asked questions about the challenge
+          Some of the most asked questions about Hack Box
         </Heading>
       </Container>
     </Box>
@@ -41,7 +41,7 @@ export default () => (
         h2: { variant: 'text.headline' },
       }}>
       <Heading id='banners' variant='headline'>
-        Should I be a Hack Club Member in order to join the challenge ?
+        What is Hack Store?
       </Heading>
       <Box
         as={BaseStyles}

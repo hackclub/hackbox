@@ -8,11 +8,15 @@ import Github from '../components/mainpage/github'
 import Contents from '../components/mainpage/content'
 import Download from '../components/mainpage/download'
 import Footer from '../components/footer'
+import Meta from '../meta/index'
+
 export default () => (
   <div>
-    <Head>
-      <title>Hack Box</title>
-    </Head>
+    <Meta
+      as={Head}
+      description='Hack Box FAQ i.e Frequently Asked Questions'
+      //  image="https://workshop-cards.hackclub.com/Press.png?fontSize=350px&brand=HQ"
+    />{' '}
     <Header bg='white' />
     <Hero />
     <Intro />

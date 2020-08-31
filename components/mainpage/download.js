@@ -32,16 +32,18 @@ export default () => (
     </Text>
     <br />
     <div sx={{ textAlign: 'center' }}>
-      <Button
-        sx={{
-          color: 'white',
-          bg: 'blue',
-          borderRadius: [8, 10],
-          width: [200],
-          py: [3],
-        }}>
-        Download
-      </Button>
+      <Fade clear>
+        <Button
+          sx={{
+            color: 'white',
+            bg: 'blue',
+            borderRadius: [8, 10],
+            width: [200],
+            py: [3],
+          }}>
+          Download
+        </Button>
+      </Fade>
     </div>
   </Box>
 )
