@@ -11,7 +11,6 @@ export default () => (
           background:
             'linear-gradient(-100deg,rgba(51,214,166,0.33),rgba(51,214,166,0.95),rgba(243,234,164,0.1))',
         }}>
-        {' '}
         complete package of resources of all types with the hack box, these
       </span>
       &nbsp; resources will make sure that people using it will have access to
@@ -29,7 +28,7 @@ const ContentElement = ({ text, bg, background }) => (
   <Flex
     sx={{
       bg: bg ? bg : 'steel',
-      background: background ? background : null,
+      // background: background ? background : null,
       color: 'white',
       height: [150],
       borderRadius: [3, 5],

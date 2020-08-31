@@ -6,7 +6,8 @@ import Philiosophy from '../components/mainpage/philosophy'
 import Working from '../components/mainpage/working'
 import Github from '../components/mainpage/github'
 import Contents from '../components/mainpage/content'
-
+import Download from '../components/mainpage/download'
+import Footer from '../components/footer'
 export default () => (
   <div>
     <Head>
@@ -19,5 +20,7 @@ export default () => (
     <Working />
     <Github />
     <Contents />
+    <Download />
+    <Footer />
   </div>
 )
