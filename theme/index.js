@@ -1,6 +1,6 @@
 import theme from '@hackclub/theme'
 
-export default {
+const base = {
   ...theme,
   sectionbox: {
     mx: [3, 3, 4, 5],
@@ -13,3 +13,9 @@ export default {
     },
   },
 }
+
+/**Disable dark mode */
+base.useColorSchemeMediaQuery = false
+base.colors.modes = {}
+
+export default base

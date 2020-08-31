@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../stories/Header'
+import Header from '../components/header'
 import Hero from '../components/mainpage/heroimage'
 import Intro from '../components/mainpage/intro'
 import Philiosophy from '../components/mainpage/philosophy'

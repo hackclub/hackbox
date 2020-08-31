@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, Flex, Grid, Box } from 'theme-ui'
 import styled from '@emotion/styled'
-import flag from './assets/Header/hackclubflag.png'
+//import flag from './assets/Header/hackclubflag.png'
 import Icon from '@hackclub/icons'
 /***
  * Header of the website
@@ -26,7 +26,7 @@ export default ({ bg }) => {
       }}>
       <Flex sx={{ width: '100%' }}>
         <img
-          src={flag}
+          src={'hackclubflag.png'}
           sx={{
             width: ['110px', '120px'],
             position: 'absolute',

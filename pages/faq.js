@@ -1,7 +1,7 @@
 import { BaseStyles, Box, Button, Container, Grid, Heading } from 'theme-ui'
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
-import Nav from '../components/header'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import Press from '../components/faq.mdx'
 
@@ -13,7 +13,7 @@ export default () => (
       description='Hack Club Alexa Challenge FAQ i.e Frequently Asked Questions'
       //  image="https://workshop-cards.hackclub.com/Press.png?fontSize=350px&brand=HQ"
     />
-    <Nav />
+    <Header bg='white' />
     <Box
       as='header'
       sx={{

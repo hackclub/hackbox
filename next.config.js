@@ -1,2 +1,2 @@
-const withImages = require('next-images')
-module.exports = withImages()
+const withMDX = require('@next/mdx')()
+module.exports = withMDX()
