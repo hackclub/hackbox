@@ -10,7 +10,7 @@ export default () => (
     <Meta
       as={Head}
       title='FAQs'
-      description='Hack Box is an intiative to provide internet resources to the most remote parts of the world'
+      description='Hack Box FAQ i.e Frequently Asked Questions'
       //  image="https://workshop-cards.hackclub.com/Press.png?fontSize=350px&brand=HQ"
     />
     <Header bg='white' />
