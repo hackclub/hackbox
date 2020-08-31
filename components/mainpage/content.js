@@ -7,18 +7,21 @@ export default () => (
       {' '}
       <h1 sx={{ color: 'green' }}>What is included in the box?</h1>
     </Fade>{' '}
-    <Text>
-      We are providing a{' '}
-      <span
-        sx={{
-          background:
-            'linear-gradient(-100deg,rgba(51,214,166,0.33),rgba(51,214,166,0.95),rgba(243,234,164,0.1))',
-        }}>
-        complete package of resources of all types with the hack box, these
-      </span>
-      &nbsp; resources will make sure that people using it will have access to
-      education in a wide range off topics!
-    </Text>
+    <Fade bottom clear>
+      {' '}
+      <Text>
+        We are providing a{' '}
+        <span
+          sx={{
+            background:
+              'linear-gradient(-100deg,rgba(51,214,166,0.33),rgba(51,214,166,0.95),rgba(243,234,164,0.1))',
+          }}>
+          complete package of resources of all types with the hack box, these
+        </span>
+        &nbsp; resources will make sure that people using it will have access to
+        education in a wide range of topics!
+      </Text>
+    </Fade>
     <Fade clear bottom>
       {' '}
       <Grid columns={[2, 2, 3, 4]} sx={{ pt: [4] }}>

@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 export default () => (
   <Box as='section' sx={{ variant: 'sectionbox', color: 'instagram' }}>
     <Fade left clear>
-      <h1 sx={{ my: 0 }}>Philosphy</h1>
+      <h1 sx={{ my: 0 }}>Philosophy</h1>
     </Fade>
 
     <Fade bottom clear>
@@ -21,8 +21,8 @@ export default () => (
           More than 40% of the world's population has no or very limited access
           to the internet{' '}
         </span>
-        and are deprived from the resources available on internet which we take
-        for granted. This problem needs to be solved!
+        and is deprived of the resources available on internet which we take for
+        granted. This problem needs to be solved!
       </Text>
     </Fade>
     <Fade clear bottom>
@@ -62,8 +62,8 @@ export default () => (
               EQUALITY
             </h2>
             <Text sx={{ fontSize: [2, 3] }}>
-              We are blessed with internet and are regularly upskilling
-              ourselves but their are still millions who lag access to this
+              We are blessed with the internet and are regularly upskilling
+              ourselves but there are still millions who lag access to these
               wonderful resources. We are trying to bridge this gap.
             </Text>
           </Box>
@@ -104,8 +104,8 @@ export default () => (
             </h2>
             <Text sx={{ fontSize: [2, 2, 2, 3], fontWeight: 'regular' }}>
               More than 40% of the world's population has no or very limited
-              access to the internet and are deprived from the resources
-              available on internet which we take for granted.
+              access to the internet and is deprived of the resources available
+              on the internet which we take for granted.
             </Text>
           </Box>
         </Flex>

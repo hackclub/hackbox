@@ -29,7 +29,7 @@ export default () => (
       </Fade>{' '}
       <Fade bottom clear>
         <Text sx={{ color: 'text', mr: [0, 5], pb: [2] }}>
-          The code of the project is
+          The code of the project is&nbsp;
           <span
             sx={{
               background:
@@ -80,8 +80,8 @@ export default () => (
           #GITHUB
         </h2>
         <Text sx={{ mx: [1, 4], textAlign: 'center', fontSize: [3] }}>
-          We maintain our project on Github countributions in any form
-          (documentation,code,adding resources etc) are more than welcome!
+          We maintain our project on Github contributions in any form
+          (documentation,code,adding resources,etc) are more than welcome!
         </Text>
         <div sx={{ textAlign: 'center', pt: [4], pb: [4] }}>
           <Button

@@ -66,7 +66,7 @@ export default () => (
         world
         <span sx={{ display: ['none', 'initial'] }}>
           {' '}
-          , because we think internet is everyone’s right!
+          , because we think the internet is everyone’s right!
         </span>
       </Text>
     </Box>

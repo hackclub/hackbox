@@ -15,7 +15,7 @@ export default () => (
       <Fade left clear>
         <h1 sx={{ color: 'orange' }}>What is Hack Box?</h1>
       </Fade>
-      <Fade>
+      <Fade bottom clear>
         <Text
           sx={{
             mr: [0, 2, 5],
@@ -31,7 +31,7 @@ export default () => (
               background:
                 'linear-gradient(-100deg,rgba(243,234,164,0.33),rgba(243,234,164,0.95),rgba(243,234,164,0.1))',
             }}>
-            provide digital resources (courses,programming softwares,books etc)
+            provide digital resources (courses,programming software,books etc)
           </span>
           &nbsp; to the most remote part of the world.This is achieved via a
           software <a href='#'>Hack Store</a> (this link is to a dummy online
@@ -76,7 +76,7 @@ export default () => (
             }}>
             <p>🪒</p>
             <p sx={{ my: 0, mx: [2, 4] }}>
-              Hack Store is a web application that is being used to cater frees
+              Hack Store is a web application that is being used to provide free
               digital resources in the hack box program.
             </p>
           </Flex>
@@ -92,7 +92,7 @@ export default () => (
             }}>
             <p>🪒</p>
             <p sx={{ my: 0, mx: [2, 4] }}>
-              It uses a sd card to serve all it's files! and hence works
+              It uses an SD card to serve all its files! and hence works
               offline.
             </p>
           </Flex>

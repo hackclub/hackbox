@@ -24,11 +24,11 @@ export default () => (
               background:
                 'linear-gradient(-100deg,rgba(51,214,166,0.33),rgba(51,214,166,0.95),rgba(243,234,164,0.1))',
             }}>
-            Hack Box sends SD cards containig a Raspberry Pi system image
+            Hack Box sends SD cards containing a Raspberry Pi system image
           </span>
           &nbsp; to people and this SD card contains all the digital resources
           and software to work offline! People just need to plug the SD card and
-          can start enjoying theese resources.
+          can start enjoying these resources.
         </Text>
       </Fade>
       <Fade left clear>
@@ -149,8 +149,8 @@ export default () => (
               UPDATE
             </h2>
             <Text sx={{ color: 'white', textAlign: 'center', mx: [1] }}>
-              Update it over a period of time by downloading new system image in
-              small chunks via a{' '}
+              Update it over a period of time by downloading a new system image
+              in small chunks via a{' '}
               <span sx={{ fontWeight: 'bold', color: 'green' }}>
                 download manager.
               </span>
