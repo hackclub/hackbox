@@ -23,7 +23,10 @@ export default () => (
       backgroundSize: ['default', 'default', 'default,800px', 'default,800px'],
     }}>
     <Box as='section' sx={{ variant: 'sectionbox' }}>
-      <h1 sx={{ color: 'facebook' }}>Where is the code?</h1>
+      <Fade clear left>
+        {' '}
+        <h1 sx={{ color: 'facebook' }}>Where is the code?</h1>
+      </Fade>{' '}
       <Fade bottom clear>
         <Text sx={{ color: 'text', mr: [0, 5], pb: [2] }}>
           The code of the project is
@@ -38,7 +41,6 @@ export default () => (
           countribution in any form to the project!
         </Text>
       </Fade>
-
       <img
         sx={{
           width: ['250px', '250px', '300px'],

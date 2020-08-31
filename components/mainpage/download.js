@@ -1,9 +1,12 @@
 /**@jsx jsx*/
 import { jsx, Box, Text, Button } from 'theme-ui'
+import Fade from 'react-reveal/Fade'
 
 export default () => (
   <Box as='section' variant={'sectionbox'}>
-    <h1 sx={{ mt: 0, color: 'blue' }}>Download Our Beta Version!</h1>
+    <Fade clear left>
+      <h1 sx={{ mt: 0, color: 'blue' }}>Download Our Beta Version!</h1>
+    </Fade>
     <Text>
       We are currently in Beta Phase of the software,
       <span

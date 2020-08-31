@@ -1,9 +1,12 @@
 /**@jsx jsx*/
 import { jsx, Box, Text, Grid, Flex } from 'theme-ui'
-
+import Fade from 'react-reveal/Fade'
 export default () => (
   <Box as='section' sx={{ variant: 'sectionbox' }}>
-    <h1 sx={{ color: 'green' }}>What is included in the box?</h1>
+    <Fade clear left>
+      {' '}
+      <h1 sx={{ color: 'green' }}>What is included in the box?</h1>
+    </Fade>{' '}
     <Text>
       We are providing a{' '}
       <span
@@ -16,11 +19,14 @@ export default () => (
       &nbsp; resources will make sure that people using it will have access to
       education in a wide range off topics!
     </Text>
-    <Grid columns={[2, 2, 3, 4]} sx={{ pt: [4] }}>
-      {arr.map((ele) => (
-        <ContentElement text={ele.text} bg={ele.bg} background={ele.bggrad} />
-      ))}
-    </Grid>
+    <Fade clear bottom>
+      {' '}
+      <Grid columns={[2, 2, 3, 4]} sx={{ pt: [4] }}>
+        {arr.map((ele) => (
+          <ContentElement text={ele.text} bg={ele.bg} background={ele.bggrad} />
+        ))}
+      </Grid>
+    </Fade>
   </Box>
 )
 

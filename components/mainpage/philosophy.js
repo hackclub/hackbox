@@ -25,89 +25,91 @@ export default () => (
         for granted. This problem needs to be solved!
       </Text>
     </Fade>
-    <Grid columns={[1, 1, 2]} gap={[4]} sx={{ pt: [3, 4] }}>
-      <Flex
-        sx={{
-          bg: 'red',
-          height: '350px',
-          borderRadius: ['8px', '10px'],
-          flexDirection: 'column',
-          color: 'white',
-          ':after': {
-            content: '',
-            display: 'inline-block',
-            position: 'absolute',
-            backgroundSize: '100%',
-            backgroundRepeat: 'no-repeat',
-            bottom: '-4rem',
-            right: '-1rem',
-            backgroundImage: 'url(landingpage/buddha.svg)',
-            width: '8rem',
-            height: '10rem',
-          },
-        }}>
-        <Box sx={{ mx: [4] }}>
-          <h2
-            sx={{
-              fontSize: [5],
-              textAlign: 'center',
-              pb: [2, 3],
-              backgroundImage: 'url(landingpage/underline.svg)',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'bottom center',
-              backgroundSize: '300px',
-              mb: [3, 4],
-            }}>
-            EQUALITY
-          </h2>
-          <Text sx={{ fontSize: [2, 3] }}>
-            We are blessed with internet and are regularly upskilling ourselves
-            but their are still millions who lag access to this wonderful
-            resources. We are trying to bridge this gap.
-          </Text>
-        </Box>
-      </Flex>
-
-      <Flex
-        sx={{
-          height: '350px',
-          backgroundImage: 'url(landingpage/education.jpg)',
-          backgroundSize: 'cover',
-          borderRadius: ['8px', '10px'],
-          backgroundPosition: 'center',
-
-          color: 'white',
-          flexDirection: 'column',
-          alignItems: 'start',
-          justifyContent: 'center',
-        }}>
-        <Box
+    <Fade clear bottom>
+      <Grid columns={[1, 1, 2]} gap={[4]} sx={{ pt: [3, 4] }}>
+        <Flex
           sx={{
-            ml: [3, 4],
-            transform: [
-              'translate(0,40px)',
-              'translate(0,40px)',
-              'translate(0,40px)',
-              'translate(0,60px)',
-            ],
-            textShadow: '1px 1px 5px black',
+            bg: 'red',
+            height: '350px',
+            borderRadius: ['8px', '10px'],
+            flexDirection: 'column',
+            color: 'white',
+            ':after': {
+              content: '',
+              display: 'inline-block',
+              position: 'absolute',
+              backgroundSize: '100%',
+              backgroundRepeat: 'no-repeat',
+              bottom: '-4rem',
+              right: '-1rem',
+              backgroundImage: 'url(landingpage/buddha.svg)',
+              width: '8rem',
+              height: '10rem',
+            },
           }}>
-          <h2
+          <Box sx={{ mx: [4] }}>
+            <h2
+              sx={{
+                fontSize: [5],
+                textAlign: 'center',
+                pb: [2, 3],
+                backgroundImage: 'url(landingpage/underline.svg)',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'bottom center',
+                backgroundSize: '300px',
+                mb: [3, 4],
+              }}>
+              EQUALITY
+            </h2>
+            <Text sx={{ fontSize: [2, 3] }}>
+              We are blessed with internet and are regularly upskilling
+              ourselves but their are still millions who lag access to this
+              wonderful resources. We are trying to bridge this gap.
+            </Text>
+          </Box>
+        </Flex>
+
+        <Flex
+          sx={{
+            height: '350px',
+            backgroundImage: 'url(landingpage/education.jpg)',
+            backgroundSize: 'cover',
+            borderRadius: ['8px', '10px'],
+            backgroundPosition: 'center',
+
+            color: 'white',
+            flexDirection: 'column',
+            alignItems: 'start',
+            justifyContent: 'center',
+          }}>
+          <Box
             sx={{
-              my: 0,
-              fontSize: [5],
-              color: 'yellow',
-              //     ml: [3],
+              ml: [3, 4],
+              transform: [
+                'translate(0,40px)',
+                'translate(0,40px)',
+                'translate(0,40px)',
+                'translate(0,60px)',
+              ],
+              textShadow: '1px 1px 5px black',
             }}>
-            #EDUCATION
-          </h2>
-          <Text sx={{ fontSize: [2, 2, 2, 3], fontWeight: 'regular' }}>
-            More than 40% of the world's population has no or very limited
-            access to the internet and are deprived from the resources available
-            on internet which we take for granted.
-          </Text>
-        </Box>
-      </Flex>
-    </Grid>
+            <h2
+              sx={{
+                my: 0,
+                fontSize: [5],
+                color: 'yellow',
+                //     ml: [3],
+              }}>
+              #EDUCATION
+            </h2>
+            <Text sx={{ fontSize: [2, 2, 2, 3], fontWeight: 'regular' }}>
+              More than 40% of the world's population has no or very limited
+              access to the internet and are deprived from the resources
+              available on internet which we take for granted.
+            </Text>
+          </Box>
+        </Flex>
+      </Grid>
+    </Fade>
   </Box>
 )

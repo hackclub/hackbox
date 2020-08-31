@@ -40,7 +40,6 @@ export default () => (
       </Fade>
       <br />
       <Grid columns={[4]} sx={{}}>
-        {' '}
         <Div
           sx={{
             bg: 'steel',
