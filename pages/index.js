@@ -15,7 +15,7 @@ export default () => (
     <Meta
       as={Head}
       description='Hack Box is an initiative to provide internet resources to the most remote parts of the world'
-      //  image="https://workshop-cards.hackclub.com/Press.png?fontSize=350px&brand=HQ"
+      image='https://raw.githubusercontent.com/hackclub/hackstore/master/public/poster.gif'
     />{' '}
     <Header bg='white' />
     <Hero />
