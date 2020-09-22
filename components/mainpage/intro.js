@@ -108,7 +108,10 @@ export default () => (
                   bg: 'orange',
                   color: 'white',
                 },
-              }}>
+              }}
+              onClick={() =>
+                window.open('https://hackstore.hackclub.com/', '_blank')
+              }>
               HACK STORE
             </Button>
           </div>

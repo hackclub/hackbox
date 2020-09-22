@@ -95,7 +95,10 @@ export default () => (
                 bg: 'yellow',
                 color: 'white',
               },
-            }}>
+            }}
+            onClick={() =>
+              window.open('https://github.com/hackclub/hackstore', '_blank')
+            }>
             Github
           </Button>
         </div>
