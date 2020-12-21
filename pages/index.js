@@ -1,3 +1,5 @@
+/**@jsx jsx*/
+import { jsx } from 'theme-ui'
 import Head from 'next/head'
 import Header from '../components/header'
 import Hero from '../components/mainpage/heroimage'
@@ -11,7 +13,7 @@ import Footer from '../components/footer'
 import Meta from '../meta/index'
 
 export default () => (
-  <div>
+  <div sx={{ overflowX: 'hidden' }}>
     <Meta
       as={Head}
       description='Hack Box is an initiative to provide internet resources to the most remote parts of the world'
